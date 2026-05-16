@@ -1,64 +1,154 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>June 6 Party</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Chelsea is Better than Newcastle 2026</title>
 
   <style>
-    body {
-      font-family: Arial;
-      background: black;
-      color: white;
-      text-align: center;
-      padding: 60px;
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
     }
 
-    .box {
-      max-width: 700px;
-      margin: auto;
+    body {
+      height: 100vh;
+      background: linear-gradient(
+        135deg,
+        #001f3f,
+        #000000,
+        #0a0a0a
+      );
+
+      color: white;
+      font-family: Arial, Helvetica, sans-serif;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      text-align: center;
+
+      overflow: hidden;
+    }
+
+    .overlay {
+      position: absolute;
+      inset: 0;
+
+      background:
+        radial-gradient(circle at top left,
+        rgba(255,255,255,0.06),
+        transparent 30%);
+
+      pointer-events: none;
+    }
+
+    .container {
+      z-index: 2;
+      max-width: 900px;
+      padding: 40px;
     }
 
     h1 {
-      font-size: 64px;
+      font-size: clamp(42px, 7vw, 82px);
+      line-height: 1.05;
+      margin-bottom: 25px;
+      text-transform: uppercase;
+      letter-spacing: 2px;
     }
 
-    p {
-      font-size: 22px;
-      line-height: 1.6;
+    .subtitle {
+      font-size: 24px;
+      opacity: 0.85;
+      margin-bottom: 45px;
     }
 
-    a.button {
+    .info {
+      font-size: 28px;
+      line-height: 1.7;
+      margin-bottom: 50px;
+    }
+
+    .address {
+      opacity: 0.8;
+      font-size: 20px;
+      margin-top: 20px;
+    }
+
+    .button {
       display: inline-block;
-      margin-top: 30px;
-      padding: 15px 30px;
+
+      padding: 18px 38px;
+
       background: white;
       color: black;
+
       text-decoration: none;
-      border-radius: 10px;
+
+      border-radius: 12px;
+
+      font-size: 18px;
       font-weight: bold;
+
+      transition: 0.25s ease;
+    }
+
+    .button:hover {
+      transform: scale(1.05);
+      background: #d6d6d6;
+    }
+
+    .footer {
+      margin-top: 60px;
+      opacity: 0.5;
+      font-size: 14px;
+      letter-spacing: 3px;
     }
   </style>
 </head>
 
 <body>
-  <div class="box">
-    <h1>JUNE 6</h1>
 
-    <p>
-      Music • Drinks • Summer • Late Night
-    </p>
+  <div class="overlay"></div>
 
-    <p>
-      Saturday June 6<br>
-      8PM until late
-    </p>
+  <div class="container">
 
-    <p>
-      White Rock, BC
-    </p>
+    <h1>
+      Chelsea is Better than Newcastle 2026
+    </h1>
 
-    <a class="button" href="https://forms.google.com">
-      RSVP
+    <div class="subtitle">
+      Summer Gathering • Football Propaganda • Drinks
+    </div>
+
+    <div class="info">
+      Saturday June 6, 2026<br>
+      4:00 PM
+    </div>
+
+    <div class="address">
+      8137 110th St<br>
+      Delta, BC V4C 4H8
+    </div>
+
+    <br><br>
+
+    <a
+      class="button"
+      href="https://maps.google.com/?q=8137+110th+St+Delta+BC+V4C+4H8"
+      target="_blank"
+    >
+      OPEN MAP
     </a>
+
+    <div class="footer">
+      INVITATION ONLY
+    </div>
+
   </div>
+
 </body>
 </html>
