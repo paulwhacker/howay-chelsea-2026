@@ -51,9 +51,11 @@
           #000000 45%,
           #0a0a0a 100%
         );
+    }
 
     .background-glow {
       position: absolute;
+
       width: 1200px;
       height: 1200px;
 
@@ -70,6 +72,7 @@
     }
 
     @keyframes rotateGlow {
+
       from {
         transform: rotate(0deg);
       }
@@ -132,9 +135,9 @@
     .event-box {
       display: inline-block;
 
-      padding: 30px 40px;
+      padding: 32px 42px;
 
-      border-radius: 20px;
+      border-radius: 22px;
 
       background: rgba(255,255,255,0.06);
 
@@ -156,7 +159,24 @@
     .time {
       font-size: 28px;
 
-      opacity: 0.9;
+      opacity: 0.92;
+
+      margin-bottom: 24px;
+    }
+
+    .competition {
+      font-size: 20px;
+
+      line-height: 1.7;
+
+      opacity: 0.88;
+
+      padding-top: 20px;
+
+      border-top:
+        1px solid rgba(255,255,255,0.12);
+
+      margin-top: 20px;
     }
 
     .address {
@@ -174,6 +194,7 @@
 
       display: flex;
       justify-content: center;
+
       gap: 20px;
 
       flex-wrap: wrap;
@@ -201,18 +222,20 @@
 
     .map-button:hover {
       transform: scale(1.05);
+
       background: #dcdcdc;
     }
 
-    .rsvp-button {
-      background: #034694;
-      color: white;
-      border: 2px solid rgba(255,255,255,0.15);
-    }
+    .contact-info {
+      margin-top: 35px;
 
-    .rsvp-button:hover {
-      transform: scale(1.05);
-      background: #0455b4;
+      font-size: 20px;
+
+      line-height: 1.8;
+
+      opacity: 0.82;
+
+      letter-spacing: 1px;
     }
 
     .footer {
@@ -249,6 +272,10 @@
 
       .time {
         font-size: 24px;
+      }
+
+      .competition {
+        font-size: 18px;
       }
 
       .address {
@@ -297,6 +324,10 @@
         4:00 PM
       </div>
 
+      <div class="competition">
+        ⛳ Long-Drive Competition — 6:00 PM
+      </div>
+
       <div class="address">
         8137 110th St<br>
         Delta, BC V4C 4H8
@@ -314,13 +345,11 @@
         OPEN MAP
       </a>
 
-      <a
-        class="button rsvp-button"
-        href="#"
-      >
-        RSVP SOON
-      </a>
+    </div>
 
+    <div class="contact-info">
+      RSVP / Questions<br>
+      236-887-6968
     </div>
 
     <div class="footer">
